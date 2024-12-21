@@ -9,10 +9,16 @@ window.globalFunction();
 
 /*
 When JS code is executed:
-   - GEC
-   - Global Object (window)
-   - JS -> JS Engine -> Global Object 
-   - this keyword 
-   - At global space this === window
-   - Variables and functions in global space are get attached to Global Object (window.x)
+
+GEC
+
+Global Object (window)
+
+JS -> JS Engine -> Global Object 
+
+this keyword 
+
+At global space this === window
+
+Variables and functions in global space are get attached to Global Object (window.x)
  */
