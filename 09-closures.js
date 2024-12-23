@@ -29,6 +29,7 @@ function x() {
 var z = x();
 console.log(z);
 z();
+// we can modify this by doing z()(); If we do this then no need to execute using separate variable 
 */
 /*
 Here comes closure into picture!
