@@ -23,4 +23,5 @@ const person = {
 
 printQuantity(fruit);
 printQuantity(vegetable);
+// printQuantity(person); gives error
 // printQuantity({ quantity: 100, bestBefore: '1 month' }); gives error
