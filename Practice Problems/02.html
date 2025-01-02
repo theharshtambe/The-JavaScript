@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Problem 2</title>
+   </head>
+   <body>
+      <h1>
+         Create a HTML page with two images and a button. When the button is
+         clicked, swap the source attribute of the images.
+      </h1>
+      <hr />
+      <img class="img1" src="imageOne.jpg" alt="" width="250" />
+      <img class="img2" src="imageTwo.jpg" alt="" width="250" />
+      <br /><br />
+      <button onclick="changeSourceAttribute()">Swap Images</button>
+
+      <script>
+         let imageOne = document.querySelector('.img1');
+         let imageTwo = document.querySelector('.img2');
+
+         function changeSourceAttribute() {
+            let sourceOfImageOne = imageOne.src;
+            let sourceOfImageTwo = imageTwo.src;
+
+            [sourceOfImageOne, sourceOfImageTwo] = [
+               sourceOfImageTwo,
+               sourceOfImageOne,
+            ];
+
+            imageOne.src = sourceOfImageOne;
+            imageTwo.src = sourceOfImageTwo;
+         }
+      </script>
+   </body>
+</html>
